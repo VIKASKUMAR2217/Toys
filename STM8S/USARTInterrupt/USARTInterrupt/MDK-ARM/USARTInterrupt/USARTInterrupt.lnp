@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"usartinterrupt\startup_stm32f401xe.o"
+"usartinterrupt\main.o"
+"usartinterrupt\gpio.o"
+"usartinterrupt\usart.o"
+"usartinterrupt\stm32f4xx_it.o"
+"usartinterrupt\stm32f4xx_hal_msp.o"
+"usartinterrupt\stm32f4xx_hal_tim.o"
+"usartinterrupt\stm32f4xx_hal_tim_ex.o"
+"usartinterrupt\stm32f4xx_hal_uart.o"
+"usartinterrupt\stm32f4xx_hal_rcc.o"
+"usartinterrupt\stm32f4xx_hal_rcc_ex.o"
+"usartinterrupt\stm32f4xx_hal_flash.o"
+"usartinterrupt\stm32f4xx_hal_flash_ex.o"
+"usartinterrupt\stm32f4xx_hal_flash_ramfunc.o"
+"usartinterrupt\stm32f4xx_hal_gpio.o"
+"usartinterrupt\stm32f4xx_hal_dma_ex.o"
+"usartinterrupt\stm32f4xx_hal_dma.o"
+"usartinterrupt\stm32f4xx_hal_pwr.o"
+"usartinterrupt\stm32f4xx_hal_pwr_ex.o"
+"usartinterrupt\stm32f4xx_hal_cortex.o"
+"usartinterrupt\stm32f4xx_hal.o"
+"usartinterrupt\stm32f4xx_hal_exti.o"
+"usartinterrupt\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "USARTInterrupt\USARTInterrupt.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USARTInterrupt.map" -o USARTInterrupt\USARTInterrupt.axf
